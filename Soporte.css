@@ -1,0 +1,47 @@
+body {
+    background-image: url('imagenes/fondo.jpg'); /* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  }
+#comment-form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+
+  /* Estilos para las etiquetas */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  /* Estilos para los campos de entrada y textarea */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Estilos para el botón */
+  #boton2 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.perfiles {
+    width: 110px;
+    height: 80px;
+    border-radius: 15px;
+    margin: 50px 0px 0px 260px;
+    justify-content: center;
+}

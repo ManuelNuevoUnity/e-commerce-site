@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="icon" href="rounded-in-photoretrica.png">
+    <link rel="stylesheet" href="Soporte.css">
+</head>
+<body>
+    <h1 style="text-align: center;color: white; font-weight: bold; font-size: 40px;">Comentarios</h1>
+    
+    <form id="comment-form">
+      <label id="nombre" for="name"></label>
+      <input type="text" id="name" name="name" placeholder="Nombre" required>
+      <br>
+      <label id="nombredelproducto" for="product-name"></label>
+      <input type="text" id="product-name" name="product-name" placeholder="Articulo" required>
+      <br>
+      <label id="comment2" for="comment"></label>
+      <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Escribe tu comentario" required></textarea>
+      <br>
+      <button id="boton2" type="submit">Enviar Comentario</button>
+    </form>
+    
+    <div id="comments">
+      <!-- Aquí se mostrarán los comentarios -->
+    </div>
+  
+    <script>
+      document.getElementById("comment-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+  
+        // Obtener los valores del formulario
+        const name = document.getElementById("name").value;
+        const productName = document.getElementById("product-name").value;
+        const commentText = document.getElementById("comment").value;
+  
+        // Crear un nuevo elemento para mostrar el comentario
+        const commentElement = document.createElement("div");
+        commentElement.innerHTML = `<strong>${name}</strong> (${productName}): ${commentText}`;
+  
+        // Agregar el elemento de comentario al contenedor de comentarios
+        document.getElementById("comments").appendChild(commentElement);
+  
+        // Limpiar el formulario
+        document.getElementById("name").value = "";
+        document.getElementById("product-name").value = "";
+        document.getElementById("comment").value = "";
+      });
+    </script>
+
+    <a href="https://www.facebook.com/juandiego.velazquezaguirre.73?midextid=ZbWKwL"> <img src="imagenes/facebook.jpg" class="perfiles"> </a>
+    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/auronplay/%3Fhl%3Des&ved=2ahUKEwjD5o24jfeAAxU8mWoFHW_AANoQFnoECA0QAQ&usg=AOvVaw3u6ucF7cRG2jbQaXah5ZRi"> <img src="imagenes/Twitter.jpg" class="perfiles"></a>
+    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/soyfedelobo/%3Fhl%3Des&ved=2ahUKEwi88tikjfeAAxX2nGoFHaUvAdQQFnoECBYQAQ&usg=AOvVaw3OtbNjWOZUnOFEeMvvGD8x"> <img src="imagenes/Instagram 2.jpg" class="perfiles"></a>
+
+</body>
+</html>
