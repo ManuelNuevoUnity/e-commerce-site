@@ -1,0 +1,258 @@
+#marco{
+    height: 2000px;
+    width: 1330px;
+    border: 1px solid black;
+    margin: 15px auto;
+}
+#marco2 {
+    height: 50px;
+    width: 1330px;
+    margin: auto;
+    border: 1px solid black;
+}
+#texto1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+.cuadrados1 {
+height: 550px;
+width: 500px;
+border: 0px solid black;
+display:inline-block;
+margin: 70px 0px 0px 120px;
+}
+.cuadrados2 {
+    height: 550px;
+    width: 500px;
+    border: 0px solid black;
+    display:inline-block;
+    margin: 70px 0px 0px 120px;
+    overflow: scroll;
+}
+.imgcuadro2 {
+    height: 550px;
+    width: 500px;
+}
+#descripcion {
+    width: 470px;
+    height: 60px;
+    border: 0px solid black;
+    margin: 15px;
+}
+#parablas {
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cajaPrecio {
+    width: 470px;
+    height: 60px;
+    border: 0px solid black;
+    margin: 15px;
+}
+#precio {
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+}
+#colores {
+    width: 470px;
+    height: 80px;
+    border: 0px solid black;
+    margin: 15px;
+}
+.botonV {
+    height: 20px;
+    width: 50px;
+    background-color: red;
+    border-color: red;
+    display:inline-block;
+    border-radius: 25px;
+    position: absolute;
+    margin: 0px 0px 0px 15px;
+}
+.botonV1 {
+    height: 20px;
+    width: 50px;
+    background-color: black;
+    border-color: black;
+    display:inline-block;
+    border-radius: 25px;
+    position: absolute;
+    margin: 0px 0px 0px 80px;
+}
+.botonV2 {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(255, 7, 160);
+    border-color: rgb(255, 7, 160);
+    display:inline-block;
+    border-radius: 25px;
+    position: absolute;
+    margin: 0px 0px 0px 145px;
+}
+.botonV3 {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(124, 233, 0);
+    border-color: rgb(124, 233, 0);
+    display:inline-block;
+    border-radius: 25px;
+    position: absolute;
+    margin: 0px 0px 0px 210px;
+}
+#marcoA {
+    width: 470px;
+    height: 40px;
+    border: solid 0px;
+    margin: 0px 0px 0px 15px;
+}
+#TipoColor {
+    position: absolute;
+    text-align: center;
+    margin: 0px 60px 0px 0px;
+    font-family: sans-serif;
+}
+#CajaTalla {
+    width: 470px;
+    height: 40px;
+    border: solid 0px;
+    margin: 40px 0px 0px 15px;
+}
+#Talla {
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 9px 0px 0px 0px;
+}
+.botonesTalla {
+    height: 23px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(157, 155, 155);
+    display:inline-block;
+    border-radius: 5px;
+    position: absolute;
+    margin: 0px 0px 0px 15px;
+}
+#CajaTabla2 {
+    width: 470px;
+    height: 308px;
+    border: solid 0px;
+    margin: 50px 0px 0px 15px;
+}
+#Tabla22{
+    margin: 0px 0px 0px 0px;
+}
+#Ldeseos {
+    width: 470px;
+    height: 320px;
+    border: solid 0px;
+    margin: 0px 0px 0px 135px;
+}
+#HolaP {
+    border: solid 0px;
+    width: 200px;
+    height: 30px;
+    margin: 0px 30px 0px 0px;
+}
+#credito {
+    margin: 0px 30px 0px 0px;
+}
+.imgTargeta {
+    width: 180px;
+    height: 80px;
+    border: solid 0px;
+    display:inline-block;
+    margin: 5px 0px 0px 0px;
+}
+.imgVisa {
+    width: 180px;
+    height: 80px;
+}
+#holaPL {
+    border: solid 0px;
+    width: 200px;
+    height: 30px;
+    margin: 10px 30px 0px 0px;
+}
+#imgOxxo {
+    width: 180px;
+    height: 80px;
+    border: solid 0px;
+    margin: 5px 0px 0px 0px;  
+}
+#efectivo {
+    margin: 0px 30px 0px 0px;
+}
+.comprar {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(8, 70, 255);
+    border-color: rgb(8, 70, 255);
+    display:inline-block;
+    border-radius: 5px;
+    position: absolute;
+    margin: 0px 0px 0px 135px;
+}
+.comprar1 {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(127, 187, 255);
+    border-color: rgb(127, 187, 255);
+    display:inline-block;
+    border-radius: 5px;
+    position: absolute;
+    margin: 45px 0px 0px 135px;
+}
+#Inicio {
+    position: absolute;
+    display: flex;
+    margin: 0px 0px 0px 20px;
+}
+#Inicio2 {
+    position: absolute;
+    display: flex;
+    margin: 0px 25px 0px 1250px;
+}
+#imgCasa {
+    height: 50px;
+    width: 20;
+}
+#imgCasa2 {
+    height: 60px;
+    width: 25;
+}
+.marco3 {
+    width: 250px;
+    height: 300px;
+    margin: 38px ;
+    display:inline-block;
+}
+.marco4 {
+    height: 300px;
+    width: 250px;
+    margin: 38px;
+    display: inline-block;
+}
+.imgCuadro {
+    height: 300px;
+    width: 250px;
+}
+.german {
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#relacion {
+    width: 500px;
+    height: 80px;
+    border: solid 1px;
+    margin: 20px 0px 0px 410px;
+}
+#Relacionados {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px 0p 0px 20p;
+}

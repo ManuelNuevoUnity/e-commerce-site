@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÁREA DE NIÑOS</title>
+    <link rel="icon" href="rounded-in-photoretrica.png">
+    <h1 id="presentacion">AREA PARA NIÑOS</h1>
+    <style>
+        #presentacion{
+            padding: 250px;
+            margin: 100px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        body {
+  background-image: url(lineas-neon-brillando-abstracto_7680x4320_xtrafondos.com.jpg); 
+  background-repeat: no-repeat;
+  background: size 1080px;;
+
+}
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .productos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .producto {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            max-width: 250px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            color: white;
+            background-color: crimson;
+        }
+        .producto:hover {
+      transform: scale(1.05);
+    } 
+
+        .producto img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .formulario {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 200px;
+            text-align: center;
+            display: none;
+            background-color: gold;
+            transition: transform 0.3s ease;
+
+        }
+
+        .formulario input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            color:black;
+            border-radius: 20px;
+        }
+        .formulario:hover{
+            transform: scale(1.05);
+
+        }
+
+        .exito {
+            font-weight: bold;
+            color: green;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .boton-comprar {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .boton-comprar:hover {
+            background-color: #45a049;
+        }
+        header {
+      background-color: white;
+      padding: 200px;
+      text-align: center;
+    }
+    #areadeninos{
+        color: gold;
+    }
+    .sidebar {
+      background-color:gold;
+      color: #333;
+      width: 280px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -280px;
+      z-index: 999;
+      transition: left 0.3s ease;
+      border-radius: 20px;
+      
+    }
+    
+    .sidebar.active {
+      left: 0;
+      border: 2px solid white;
+    }
+    
+    .toggle-btn {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 999;
+      
+    }
+    
+    .toggle-btn:hover {
+      background-color: #555;
+      
+    }
+    
+    #menu {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 60px;
+      
+    }
+    
+    #menu li {
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    #menu li a {
+      color: #333;
+      text-decoration: none;
+      border: 2px solid white;
+      font-weight: bold;
+    }
+    
+    .content {
+      margin-left: 0;
+      padding: 20px;
+      transition: margin-left 0.3s ease;
+      font-weight: bold;
+    }
+    
+    .content.active {
+      margin-left: 280px;
+      font-weight: bold;
+    }         
+    #MENUDE{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    #SEGUNDO2 {
+      margin: 0;
+      padding: 0;
+      margin: 10px;
+    }
+    #c1
+    {
+      border-radius: 5px;
+    }
+    #COLORBUSQUEDA{
+      color: red;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    
+    </style>
+</head>
+<body>
+      
+    <h1 id="areadeninos">ÁREA DE NIÑOS</h1>
+
+    <div class="productos-container">
+        
+
+       
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO1.webp" alt="Ropa 2">
+            <h3>CALCETAS DE NIÑO</h3>
+            <p>MARCA LINE WHITE</p>
+            <p>Precio: $160 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO2.webp" alt="Ropa 2">
+            <h3>TRAJE PARA NIÑO</h3>
+            <p>MARCA LINE WHITE</p>
+            <p>Precio: $180 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO3.webp" alt="Ropa 2">
+            <h3>ROPA DE CASA</h3>
+            <p>MARCA RAIN</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO4.webp" alt="Ropa 2">
+            <h3>CONJUNTO ELEGANTE</h3>
+            <p>MARCA GUCCI</p>
+            <p>Precio: $500 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO5.webp" alt="Ropa 2">
+            <h3>CONJUNTO DE FIESTAS</h3>
+            <p>MARCA EAPLAY</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO6.webp" alt="Ropa 2">
+            <h3>TRAJE DE MONO</h3>
+            <p>MARCA MATTEL</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO7.webp" alt="Ropa 2">
+            <h3>ZAPATOS COMODOS</h3>
+            <p>MARCA FLEXI</p>
+            <p>Precio: $340 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO8.webp" alt="Ropa 2">
+            <h3>KIT INVERNAL</h3>
+            <p>MARCA MOST INVERNAL</p>
+            <p>Precio: $170 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO9.webp" alt="Ropa 2">
+            <h3>ZAPATOS PARA DORMIR</h3>
+            <p>MARCA GRAFITO</p>
+            <p>Precio: $100 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO10.webp" alt="Ropa 2">
+            <h3>CONJUNTO PLAYERO</h3>
+            <p>MARCA BEST PLAY</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO11.webp" alt="Ropa 2">
+            <h3>ROPA DEPORTIVA</h3>
+            <p>MARCA JORDAN</p>
+            <p>Precio: $400 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="ROPADENIÑO12.webp" alt="Ropa 2">
+            <h3>PIJAMA</h3>
+            <p>MARCA DC</p>
+            <p>Precio: $200 MXN</p>
+            <p>Talla: 5-12 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+
+    </div>
+
+    <div id="formulario" class="formulario">
+        <h2>Completa tu compra</h2>
+        <input type="text" placeholder="Dirección de envío" id="direccionEnvio"><br>
+        <input type="text" placeholder="Número de tarjeta de crédito" id="numTarjeta"><br>
+        <input type="text" placeholder="Número de teléfono" id="numTelefono"><br>
+        <button class="boton-comprar" onclick="compraExitosa()">Comprar</button>
+    </div>
+
+    <div id="exito" class="exito">
+        <h2>¡Compra exitosa!</h2>
+        <p>¡Gracias por tu compra!</p>
+        <img src="1_RldwUWW-o27j6heG9dyUbQ.gif" alt="Compra exitosa">
+    </div>
+
+    <script>
+        function mostrarFormulario(numProducto) {
+            var productos = document.getElementsByClassName('producto');
+            var formulario = document.getElementById('formulario');
+
+            for (var i = 0; i < productos.length; i++) {
+                productos[i].style.display = 'none';
+            }
+
+            formulario.style.display = 'block';
+        }
+
+        function compraExitosa() {
+            var formulario = document.getElementById('formulario');
+            var exito = document.getElementById('exito');
+            formulario.style.display = 'none';
+            exito.style.display = 'block';
+        }
+        function toggleMenu() {
+      var sidebar = document.getElementById("sidebar");
+      var content = document.getElementById("content");
+      
+      sidebar.classList.toggle("active");
+      content.classList.toggle("active");
+    }
+    
+    document.addEventListener("click", function(event) {
+      var sidebar = document.getElementById("sidebar");
+      var toggleBtn = document.querySelector(".toggle-btn");
+      
+      if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target) && sidebar.classList.contains("active")) {
+        toggleMenu();
+      }
+    });
+    </script>
+</body>
+<body id="SEGUNDO2">
+    <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    
+    <div class="sidebar" id="sidebar">
+      <ul id="menu">
+        <p id="MENUDE">MENU</p>
+        <li><a href="index.html" target="_blank">INICIO</a></li>
+        <li><a href="REGISTRO.html" target="_blank">REGISTRO</a></li>
+        <li><a href="MUJER.html" target="_blank">AREA DE MUJER</a></li>
+        <li><a href="HOMBRE.html" target="_blank">AREA DE HOMBRE</a></li>
+        <li><a href="AREADENINOSMEN.html" target="_blank">AREA DE NIÑOS</a></li>
+        <li><a href="AREASDENINAS.html" target="_blank">AREA DE NIÑAS</a></li>
+        <li><a href="inicioo.html" target="_blank">AREA DE LENCERIA</a></li>
+      <li><a href="index.html" target="_blank">INICIO</a></li>
+        <li>SOPORTE</li>
+      </ul>
+    </div>
+    </body>
+</html>

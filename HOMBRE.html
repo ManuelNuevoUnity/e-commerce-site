@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÁREA DE HOMBRE</title>
+      <link rel="icon" href="rounded-in-photoretrica.png">
+      <link rel="stylesheet" href="estilo.css">
+      <h1 id="presentacion"></h1>
+    <style>
+        #presentacion{
+            padding: 200px;
+            margin: 100px;
+            border: 0px;
+            
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        body {
+  background-image: url(lineas-neon-brillando-abstracto_7680x4320_xtrafondos.com.jpg); 
+}
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .productos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .producto {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            max-width: 250px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            color: white;
+            background-color:crimson;
+        }
+        .producto:hover {
+      transform: scale(1.05);
+    } 
+
+        .producto img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .formulario {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 200px;
+            text-align: center;
+            display: none;
+            background-color: gold;
+            transition: transform 0.3s ease;
+            
+
+        }
+
+        .formulario input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            color:black;
+            border-radius: 20px;
+        }
+        .formulario:hover{
+            transform: scale(1.05);
+
+        }
+
+        .exito {
+            font-weight: bold;
+            color: green;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .boton-comprar {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .boton-comprar:hover {
+            background-color: #45a049;
+        }
+        header {
+      background-color: white;
+      padding: 200px;
+      text-align: center;
+    }
+    #colorp{
+        color: gold;
+        text-align: center;
+        align-items: center;
+        display: block;
+        
+    }
+    head{
+        padding: 10px;
+        margin: 50px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+   
+    </style>
+</head>
+<body>
+      
+    <h1 id="colorp">ÁREA DE HOMBRE</h1>
+    <head id="hombrec">
+    <header class="headernav1">
+        <div class="navigation1">
+          <a href="REGISTRO.html" target="_blank" class="regisnew">REGISTRO DE USUARIOS</a>
+          <a href="HOMBRE.html" target="_blank" class="regisnew">AREA DE CABALLEROS</a>
+          <a href="MUJER.html" target="_blank" class="regisnew">AREA DE MUJER</a>
+          <a href="AREADENINOSMEN.html" target="_blank" class="regisnew">AREA DE ROPA PARA NIÑOS</a>
+          <a href="AREASDENINAS.html" target="_blank" class="regisnew">AREA DE ROPA PARA NIÑAS</a>
+        </div>
+      </header>
+      </head>
+
+
+    <div class="productos-container">
+        
+
+       
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE1.webp" alt="Ropa 2">
+            <h3>CHAMARRA CAFE</h3>
+            <p>MARCA NIKE</p>
+            <p>Precio: $300 MXN</p>
+            <p>Talla: 10-40</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGEN HOMBRE2.webp" alt="Ropa 2">
+            <h3>CAMISA NEGRA</h3>
+            <p>MARCA POLO</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 11-23</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE3.webp" alt="Ropa 2">
+            <h3>SUDADERA NEGRA</h3>
+            <p>MARCA NASA</p>
+            <p>Precio: $170 MXN</p>
+            <p>Talla: 30-50</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE4.webp" alt="Ropa 2">
+            <h3>ABRIGO GRIS</h3>
+            <p>MARCA ADIDAS</p>
+            <p>Precio: $250 MXN</p>
+            <p>Talla: 20-30</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE5.webp" alt="Ropa 2">
+            <h3>JOGGER NEGRO</h3>
+            <p>MARCA OGGI</p>
+            <p>Precio: $300 MXN</p>
+            <p>Talla: </p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE6.webp" alt="Ropa 2">
+            <h3>CHAMARRA ESCOLAR</h3>
+            <p>MARCA HIGH SCHOOL</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 10-45</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE7.webp" alt="Ropa 2">
+            <h3>SHORT DE GYM</h3>
+            <p>MARCA BOST</p>
+            <p>Precio: $200 MXN</p>
+            <p>Talla: 34-57</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE8.webp" alt="Ropa 2">
+            <h3>GORRA NEGRA</h3>
+            <p>MARCA MX LINE</p>
+            <p>Precio: $150 MXN</p>
+            <p>Talla: 34-40</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE9.webp" alt="Ropa 2">
+            <h3>SUDADERA JUVENIL NEGRA</h3>
+            <p>MARCA JORDAN</p>
+            <p>Precio: $500 MXN</p>
+            <p>Talla: 20-50</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE10.webp" alt="Ropa 2">
+            <h3>SUETER HOMBRE ARAÑA</h3>
+            <p>MARCA MARVEL</p>
+            <p>Precio: $400 MXN</p>
+            <p>Talla: 10-20</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE11.webp" alt="Ropa 2">
+            <h3>CALCETAS BLANCAS</h3>
+            <p>MARCA LINE WHITE</p>
+            <p>Precio: $160 MXN</p>
+            <p>Talla: 33-54 años</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+        <div class="producto" onclick="mostrarFormulario(2)">
+            <img src="IMAGENHOMBRE12.webp" alt="Ropa 2">
+            <h3>TENIS PARA GYM</h3>
+            <p>MARCA PIRMA</p>
+            <p>Precio: $180 MXN</p>
+            <p>Talla: 20-30</p>
+            <button class="boton-comprar">Comprar</button>
+        </div>
+
+    </div>
+    
+    <div id="formulario" class="formulario">
+        <h2>Completa tu compra</h2>
+        <input type="text" placeholder="Dirección de envío" id="direccionEnvio"><br>
+        <input type="text" placeholder="Número de tarjeta de crédito" id="numTarjeta"><br>
+        <input type="text" placeholder="Número de teléfono" id="numTelefono"><br>
+        <button class="boton-comprar" onclick="compraExitosa()">Comprar</button>
+    </div>
+
+    <div id="exito" class="exito">
+        <h2>¡Compra exitosa!</h2>
+        <p>¡Gracias por tu compra!</p>
+        <img src="1_RldwUWW-o27j6heG9dyUbQ.gif" alt="Compra exitosa">
+    </div>
+
+    <script>
+        function mostrarFormulario(numProducto) {
+            var productos = document.getElementsByClassName('producto');
+            var formulario = document.getElementById('formulario');
+
+            for (var i = 0; i < productos.length; i++) {
+                productos[i].style.display = 'none';
+            }
+
+            formulario.style.display = 'block';
+        }
+
+        function compraExitosa() {
+            var formulario = document.getElementById('formulario');
+            var exito = document.getElementById('exito');
+            formulario.style.display = 'none';
+            exito.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
